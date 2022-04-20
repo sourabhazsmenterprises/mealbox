@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^(.*)$ public/$1 [L]
+RewriteCond %{HTTP_HOST} ^stylefast\.co\mealbox$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.stylefast\.co\mealbox$
+ 
+RewriteRule ^/?$ "https\:\/\/www\.stylefast\.co\mealbox" [R=301,L]
